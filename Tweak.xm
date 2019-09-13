@@ -60,13 +60,13 @@ TPDialerNumberPad *npad;
 				pcv = [self buttonsViewController];
 				[pcv controlTypeTapped:1 forView:nil];
 				
-				dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) 
+				dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) 
 				{
 					NSLog(@"[AutoAnswerPoundXI]----------PUSH POUND----------------");
 					npad = [[self keypadViewController] keypad];
 					[npad buttonDown:[[npad buttons] objectAtIndex:11]];
 					[npad buttonUp:[[npad buttons] objectAtIndex:11]];
-					dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) 
+					dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) 
 					{
 						NSLog(@"[AutoAnswerPoundXI]----------HANG UP----------------");
 						[self bottomBarActionPerformed:9 withCompletionState:1 fromBar:[self bottomBar]];

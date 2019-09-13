@@ -1,7 +1,7 @@
 Package: com.williammuff.autoanswerpoundxi
 Name: AutoAnswerPoundXI
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: A tweak that will automatically:(Answer a contact named VPN | Push the pound key | Hang up).
 Maintainer: William Muff
